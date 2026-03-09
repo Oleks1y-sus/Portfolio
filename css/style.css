@@ -121,7 +121,9 @@ a {
 
 #portfolio a{
     display: inline-block;
-    padding: 10px 20px;
+    width: 150px;
+    padding: 10px 0;
+    text-align: center;
     background-color: #3f6f99;
     color: white;
     text-decoration: none; 
@@ -132,4 +134,9 @@ a {
 #portfolio a:hover {
     background-color: #0056b3; 
 }
+
+#portfolio li{
+    padding: 3px;
+}
+
 
