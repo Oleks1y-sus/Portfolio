@@ -1,0 +1,95 @@
+a:link {color:blue; text-decoration:none}
+a:visited {color:pink; text-decoration:none}
+a:hover {color:red; text-decoration:underline}
+a:active {color:yellow; text-decoration:underline}
+.cat_img {
+    width: 300px;
+    height: auto;
+}
+* {
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    margin: 0;
+    background: linear-gradient(120deg, #1e1e2f, #2b2b44);
+    color: #fff;
+}
+
+.container {
+    max-width: 1000px;
+    margin: 40px auto;
+    background: #2f2f46;
+    padding: 30px;
+    border-radius: 12px;
+}
+
+header {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+header h1 {
+    margin-bottom: 10px;
+    color: #ffd369;
+}
+
+.info {
+    display: flex;
+    gap: 30px;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.info div {
+    flex: 1;
+}
+
+.image {
+    width: 100%;
+    border-radius: 10px;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+th, td {
+    border: 1px solid #555;
+    padding: 10px;
+    text-align: center;
+}
+
+th {
+    background: #ffd369;
+    color: #000;
+}
+
+ul {
+    padding-left: 20px;
+}
+
+footer {
+    margin-top: 30px;
+    text-align: center;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+a {
+    color: #ffd369;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+.footer_icon {
+    width: 40px;
+    height: auto;
+}
