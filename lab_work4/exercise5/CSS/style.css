@@ -1,0 +1,39 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: auto;
+}
+
+body {
+    font-size: 35px;
+}
+
+table {
+    border-collapse: collapse;
+    border: black solid 2px;
+    margin: 10px auto 0;
+}
+
+td {
+    height: 50px;
+    width: 50px;
+    text-align: center;
+    transition: transform 0.2s ease; /* Плавність */
+    cursor: pointer;
+    background-color: white;
+}
+td:hover {
+    transform: scale(1.1); /* Збільшення на 10% */
+    z-index: 10;           /* Виводить клітинку на передній план */
+    position: relative;    /* Необхідно, щоб z-index спрацював */
+    box-shadow: 0 0 10px rgba(0,0,0,0.5); /* Додає акцент */
+}
+ /* вибираємо всі парні рядки та непарні стовпці */
+
+tr:nth-child(2n) td:nth-child(2n+1) { 
+    background-color: rgb(159, 159, 159);
+}
+/* вибираємо всі непарні рядки та парні стовпці */
+tr:nth-child(2n+1) td:nth-child(2n) { 
+    background-color: rgb(159, 159, 159);
+}
