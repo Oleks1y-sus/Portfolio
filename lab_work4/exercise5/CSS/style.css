@@ -18,15 +18,15 @@ td {
     height: 50px;
     width: 50px;
     text-align: center;
-    transition: transform 0.2s ease; /* Плавність */
+    transition: transform 0.2s ease; 
     cursor: pointer;
     background-color: white;
 }
 td:hover {
-    transform: scale(1.1); /* Збільшення на 10% */
-    z-index: 10;           /* Виводить клітинку на передній план */
-    position: relative;    /* Необхідно, щоб z-index спрацював */
-    box-shadow: 0 0 10px rgba(0,0,0,0.5); /* Додає акцент */
+    transform: scale(1.1); 
+    z-index: 10;           
+    position: relative;    
+    box-shadow: 0 0 10px rgba(0,0,0,0.5); 
 }
  /* вибираємо всі парні рядки та непарні стовпці */
 
