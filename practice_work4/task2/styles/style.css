@@ -1,0 +1,42 @@
+.circle {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    width: 100px;
+    height: 100px;
+    margin: 250px auto;
+    border-radius: 50%;
+    background-color: white;
+}
+.circle p {
+    font-size: 50px;
+    margin: 0;
+    z-index: 1;
+}
+.first-circle {
+    box-shadow: 0 0 0 40px rgb(255, 255, 0),
+                0 0 0 80px rgb(0, 0, 255);
+}
+
+
+.second-circle::before,
+.second-circle::after {
+    content: "";
+    position: absolute;
+    border-radius: 50%;
+    z-index: -1;
+}
+
+.second-circle::after {
+    width: 180px;
+    height: 180px;
+    background-color: rgb(255, 255, 0);
+}
+
+.second-circle::before {
+    width: 260px;
+    height: 260px;
+    background-color: rgb(0, 0, 255);
+    z-index: -2;
+}
