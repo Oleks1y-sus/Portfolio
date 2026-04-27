@@ -1,0 +1,139 @@
+html {
+    height: 100%;
+    background: #342727;
+    background: linear-gradient(144deg,rgba(52, 39, 39, 1) 20%, rgba(77, 61, 54, 1) 50%, rgba(138, 110, 72, 1) 100%);
+  }
+  
+  body {
+    margin: 30px 50px;  
+  }
+
+.menu {
+    background-color: white;
+    width: 75%;
+    height: 450px;
+    display: flex;
+    justify-content: center;
+    position: relative;
+  }
+  
+  .menu-option {
+    background: white;
+    height: 95px;
+    margin: 5px 20px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+  }
+
+  .uppercase{
+    text-transform: uppercase;
+  }
+  .menu-option-name{
+    font-size: 25px;
+  }
+  .menu-option-price{
+    font-size: 20px;
+    color: #848080;
+  }
+  
+  .options-wrap {
+    height: auto;
+    width: calc(100% - 100px); /* Ширина відступу з кожного боку */
+    margin: 20px;
+    position: absolute;
+    bottom: 10px;
+    display: flex;
+    flex-wrap: wrap; 
+  }
+  
+  .options-wrap .menu-option {
+    width: calc(50% - 40px); /*  2 стовпчики по 3 елементи */
+  }
+  
+
+.line {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 20px;
+    width: 100%;
+    height: 1px;
+    background: #ccc;
+  }
+  
+  .line:after {
+    content: '';
+    position: absolute;
+    transform:  rotate(45deg);
+    width: 10px;
+    height: 10px;
+    background: #ccc;
+  }
+
+.logo{
+    background-image: url("https://s.yimg.com/uu/api/res/1.2/xeL1RLqwsfLevjLT4glCxg--~B/aD0zMDk7dz00MTI7YXBwaWQ9eXRhY2h5b24-/http://globalfinance.zenfs.com/en_us/Finance/US_AFTP_SILICONALLEY_H_LIVE/Heres_why_Wendys_burgers_are-90ed3b3c07fee9d948fcb089f703ae7e");
+    background-size: cover;
+    width: 25%;
+    height: 450px;
+    float: left;
+    position: relative;
+    text-align: center;
+       
+}
+
+
+.logo-text {
+    width: 100%;
+    height: 225px;
+    background-color:  black ;
+    position: absolute;
+    top: 205px;
+    right: 10px;
+    line-height: 0.8;
+      
+}
+h1{
+    font-size:50px;
+    margin-bottom: 5px;
+    margin-top: 40px;
+   
+}
+
+h1, h3{
+    color: white;
+    text-transform: uppercase;     
+}
+.font-arial, .menu-option > span:nth-child(2), .button{
+    font-family: Arial, Helvetica, sans-serif;
+}
+.menu-option > span:nth-child(2){
+  line-height: 1.8;
+}
+.yellow-text{
+    color: rgb(227, 188, 30);
+}
+
+h4{
+    font-weight:300;
+    font-size: 20px;
+}
+
+.button{
+    display: block;
+    background-color: #000000; 
+    width: 250px;
+    height: 55px;
+    margin-top: 10px;
+    float: right;
+    line-height: 55px;
+    text-align: center;
+    text-decoration: none;
+    text-transform: uppercase;
+    color: #ffffff;
+    font-weight: bold;
+
+}
+    
+

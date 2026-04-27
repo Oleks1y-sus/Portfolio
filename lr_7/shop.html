@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="styles/styles.css">
+</head>
+<body>
+ <div class="overlay" id="overlay">
+    <div class="message-box">
+        <span class="close" onclick="closeMessage()">&times;</span>
+        <p>Товар успішно додано у корзину</p>
+    </div>
+</div>
+
+    <h1>обов'язково додайте своє замовлення</h1>
+    <div class="wrap">
+        <div class="swipe swipe-left">&lt</div>
+        <div class="swipe swipe-right">&gt</div>
+
+    <div class="card">
+        <div class="card-header">
+        <div class="label new">новинка</div>
+        <div class="title"><a href="https://www.visual-paradigm.com/shop/vp.jsp" class="category">моделювання</a></div>
+        </div>
+        <div class="photo-block">
+            <a href="https://www.visual-paradigm.com/shop/vp.jsp" class="photo-on-sale-soon"><img src="photos/visual_paradigm.png" alt="Visual Paradigm" class="photo"></a>
+        </div>
+        <a href="https://www.visual-paradigm.com/shop/vp.jsp" class="name">Visual Paradigm</a>
+        <div><span class="price price-on-sale-soon">0 грн</span></div>
+        <div class="on-sale-soon">
+            <span class="on-sale-soon-text">незабаром у<br> продажі</span>   
+        </div>
+    </div>
+
+
+    <div class="card">
+
+        <div class="card-header">
+        <div class="title"><a href="https://soft.rozetka.com.ua/ua/microsoft-qq2-00004/p540985914/" class="category">офісне ПЗ</a></div>
+        </div>
+        <div class="photo-block">
+            <a href="https://soft.rozetka.com.ua/ua/microsoft-qq2-00004/p540985914/" class="photo-on-sale-soon"><img src="photos/office_365.jpg" alt="Microsoft 365" class="photo"></a>
+        </div>
+        <a href="https://soft.rozetka.com.ua/ua/microsoft-qq2-00004/p540985914/" class="name">Microsoft 365</a>
+        <div><span class="old-price">4 299 грн</span> <span class="price">3 299 грн</span></div>
+        <button class="sale-button" onclick="showMessage()"><span class="sale-button-text">у корзину</span></button>
+    </div>
+
+    <div class="card">
+        <div class="label top-sale">хіт<br>продажів</div>
+        <div class="card-header">
+        <div class="title"><a href="https://epicentrk.ua/shop/mplc-aktivacia-adobe-creative-cloud-1-misac-2466198205-1f04a965-0118-6c3a-9cb9-7f349f7eb616.html" class="category">дизайн і креатив</a></div>
+        </div>
+        <div class="photo-block">
+            <a href="https://epicentrk.ua/shop/mplc-aktivacia-adobe-creative-cloud-1-misac-2466198205-1f04a965-0118-6c3a-9cb9-7f349f7eb616.html" class="photo-on-sale-soon"><img src="photos/creative_cloud.jpg" alt="Adobe Creative Cloud" class="photo"></a>
+        </div>
+        <a href="https://epicentrk.ua/shop/mplc-aktivacia-adobe-creative-cloud-1-misac-2466198205-1f04a965-0118-6c3a-9cb9-7f349f7eb616.html" class="name">Adobe Creative Cloud</a>
+        <div><span class="price">299 грн</span></div>
+        <button class="sale-button" onclick="showMessage()"><span class="sale-button-text">у корзину</span></button>
+    </div>
+
+
+
+    <div class="card">
+        <div class="card-header">
+            <div class="label top-sale">хіт<br>продажів</div>
+        <div class="title"><a href="https://www.eset.com/ua/home/nod32/" class="category">антивірус</a></div>
+        </div>
+        <div class="photo-block">
+            <a href="https://www.eset.com/ua/home/nod32/" class="photo-on-sale-soon"><img src="photos/eset.jpg" alt="ESET NOD32" class="photo"></a>
+        </div>
+        <a href="https://www.eset.com/ua/home/nod32/" class="name">ESET NOD32</a>
+        <div><span class="price">1 436 грн</span></div>
+        <button class="sale-button" onclick="showMessage()"><span class="sale-button-text">у корзину</span></button>
+    </div>
+</div>
+    </div>
+    <script>
+        function showMessage() {
+            var overlay = document.getElementById('overlay');
+            overlay.style.display = 'flex';
+        }
+
+        function closeMessage() {
+            var overlay = document.getElementById('overlay');
+            overlay.style.display = 'none';
+        }
+    </script>
+</body>
+</html>
