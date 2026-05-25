@@ -206,3 +206,110 @@ a {
 .sub-btn:hover {
     background-color: #0056b3 !important;
 }
+
+/* Стилізація Footer */
+.footer {
+    background-color: #f8fafc;
+    border-top: 1px solid #e2e8f0;
+    padding: 60px 0 30px 0;
+    width: 100%;
+}
+
+.footer-container {
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 0 20px;
+    text-align: center;
+}
+
+.footer-container h2 {
+    text-transform: uppercase;
+    font-weight: 700;
+    font-size: 28px;
+    color: #1e293b;
+    margin-bottom: 15px;
+}
+
+.footer-divider {
+    border: none;
+    height: 2px;
+    background-color: #009de1; /* Ваш фірмовий блакитний колір */
+    width: 60px;
+    margin: 0 auto 40px auto;
+}
+
+/* Сітка контактів на Flexbox */
+.contacts-grid {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 30px;
+    margin-bottom: 50px;
+}
+
+.contact-item {
+    flex: 1 1 calc(33.333% - 20px);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    min-width: 250px;
+}
+
+/* Налаштування SVG з використанням спрайтів */
+.contact-svg {
+    width: 36px;
+    height: 36px;
+    color: #009de1; /* Задає колір ліній SVG через stroke='currentColor' */
+    margin-bottom: 15px;
+    transition: transform 0.3s ease, color 0.3s ease;
+}
+
+.contact-item:hover .contact-svg {
+    transform: scale(1.1);
+    color: #007bb0; /* Темніший відтінок при наведенні */
+}
+
+.contact-info {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.contact-label {
+    font-size: 13px;
+    text-transform: uppercase;
+    color: #64748b;
+    font-weight: 600;
+    letter-spacing: 0.5px;
+}
+
+.contact-value {
+    font-size: 16px;
+    color: #334155;
+    text-decoration: none;
+    font-weight: 500;
+    transition: color 0.2s ease;
+}
+
+a.contact-value:hover {
+    color: #009de1;
+}
+
+.footer-copyright {
+    font-size: 14px;
+    color: #94a3b8;
+    border-top: 1px solid #e2e8f0;
+    padding-top: 20px;
+}
+
+/* Адаптивність для мобільних пристроїв */
+@media (max-width: 768px) {
+    .contacts-grid {
+        flex-direction: column;
+        gap: 35px;
+    }
+    .contact-item {
+        flex: 1 1 100%;
+    }
+}
